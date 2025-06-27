@@ -94,8 +94,11 @@ SLIDER DE IMÁGENES (CAROUSEL)
 
 
 /* -----------------------------------
-   COLORES PERSONALIZADOS POR SECCIÓN
+  COLORES PERSONALIZADOS POR SECCIÓN
 ----------------------------------- */
+.bg-verde-custom{
+  background-color: #0a7e3f !important;
+}
 
 #que-es {
   background-color: #000205;
