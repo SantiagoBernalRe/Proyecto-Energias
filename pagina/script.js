@@ -1,7 +1,7 @@
 // Scroll suave y animación al hacer clic en menú
 document.querySelectorAll('a.nav-link').forEach(link => {
   link.addEventListener('click', function(e) {
-    e.preventDefault();
+    
 
     const destino = document.querySelector(this.getAttribute('href'));
     if (destino) {

@@ -59,6 +59,7 @@ SLIDER DE IMÁGENES (CAROUSEL)
 #carouselEolico img {
   object-fit: cover;
   height: 100%;
+
 }
 
 .slider-img-container {
@@ -113,6 +114,14 @@ SLIDER DE IMÁGENES (CAROUSEL)
 #galeria {
   background-color: #dee2e6;
   color: black;
+  
+}
+
+.galeria-img {
+  width: 100%;
+  height: 250px;       /* altura fija */
+  object-fit: cover;   /* recorta la imagen para que llene el espacio */
+  border-radius: 12px; /* conserva el estilo redondeado */
 }
 
 #contacto {
