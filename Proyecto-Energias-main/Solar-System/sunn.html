@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Energia Renovable </title>
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+   <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Energía Solar</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#que-es" class="nav-link">¿Qué es?</a></li>
+          <li class="nav-item"><a href="#ventajas" class="nav-link">Ventajas</a></li>
+          <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider de Imágenes -->
+  <section id="slider" class="py-5 bg-white">
+    <div class="container">
+      <div id="carouselEolico" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel"
+        data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider-img-container">
+              <img src="./assets/Solar-one.jpg" class="d-block w-100" alt="solar 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Comprometidos con el sol</h5>
+                <p>Aprovechamos su energía para cuidar el planeta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider-img-container">
+              <img src="./assets/solar-two.jpg" class="d-block w-100" alt="solar 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Innovación que ilumina</h5>
+                <p>La tecnología solar transforma la luz en futuro limpio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider-img-container">
+              <img src="./assets/solar-three.jpeg" class="d-block w-100" alt="solar 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fácil Instalación</h5>
+                <p>La energía solar impulsa un mundo más verde.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿Qué es la energía eólica? -->
+  <section id="que-es" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">¿Qué es la energía solar?</h2>
+      <p class="text-center">
+        La energía solar es una forma de energía renovable que se obtiene del Sol. Esta energía se produce 
+        por la radiación electromagnética que emite el Sol, la cual puede ser aprovechada para generar 
+        electricidad, producir calor o incluso alimentar dispositivos tecnológicos.
+        </p>
+    </div>
+  </section>
+
+  <!-- Ventajas -->
+  <section id="ventajas" class="py-5 bg-success">
+    <div class="container">
+      <h2 class="text-center mb-4">Ventajas de la energía solar</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Energía Inagotable</h5>
+              <p class="card-text">No emite gases contaminantes durante su funcionamiento. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Ahorro Económico</h5>
+              <p class="card-text">Reduce las facturas de electricidad a largo plazo en hogares y empresas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Fácil Instalación</h5>
+              <p class="card-text">Se puede implementar en techos, terrenos y zonas rurales sin grandes obras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería de Imágenes</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="./assets/solar-four.jpg" class="img-fluid rounded" alt="Eólica 1">
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/solar-five.jpg" class="img-fluid rounded" alt="Eólica 2">
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/solar-six.jpg" class="img-fluid rounded" alt="Eólica 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+<section id="contacto" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <div class="row align-items-center">
+      <!-- Imagen a la izquierda -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="./assets/solar-seven.jpg" class="img-fluid rounded shadow" alt="Imagen de contacto">
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" id="correo" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Energía Solar. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dinam.js"></script>
+</body>
+</html>
