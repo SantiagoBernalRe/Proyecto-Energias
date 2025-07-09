@@ -20,7 +20,7 @@ body {
 /* ===== ENCABEZADO ===== */
 .encabezado {
   width: 100vw;
-  background-color: lch(78.36% 56.49 150.46);
+  background-color: #0a7e3f;
   color: white;
   text-align: center;
   padding: 30px 20px;
@@ -29,13 +29,14 @@ body {
 
 .encabezado h1 {
   font-size: 36px;
-  color: #0a7e3f;
+  color: #f1f1f1;
   margin-bottom: 10px;
 }
 
 .encabezado p {
   font-size: 18px;
-  color: #333;
+  color: #ffffff;
+  text-align: center;
 }
 
 /* ===== CARRUSEL ===== */
@@ -55,9 +56,12 @@ body {
 }
 
 .slides img {
-  width: 100vw;
-  height: 100%;
+  width: calc(100vw - 80px); /* separa 40px por lado */
+  height: calc(100% - 40px); /* mantiene 20px arriba y abajo */
   object-fit: cover;
+  margin: 20px 40px;
+  border-radius: 12px;
+  box-sizing: border-box;
 }
 
 .prev, .next {
@@ -92,7 +96,7 @@ body {
 .acordeon-section h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #0a7e3f;
+  color: #ebf0ed;
 }
 
 .desplegable {
@@ -134,7 +138,7 @@ body {
 }
 
 .caja {
-  background-color: hsl(147, 63%, 43%);
+  background-color:#0a7e3f ;
   width: 180px;
   height: 180px;
   border-radius: 10px;
@@ -164,3 +168,15 @@ body {
   font-weight: bold;
   margin: 0;
 }
+
+footer {
+  width: 100vw;
+  background-color: #0a7e3f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
