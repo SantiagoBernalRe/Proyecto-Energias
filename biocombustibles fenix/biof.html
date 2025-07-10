@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biocombustibles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/index.html">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Biocombustibles</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#que-es" class="nav-link">¿Qué es?</a></li>
+          <li class="nav-item"><a href="#ventajas" class="nav-link">Ventajas</a></li>
+          <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider de Imágenes -->
+  <section id="slider" class="py-5 bg-white">
+    <div class="container">
+      <div id="carouselEolico" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel"
+        data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider-img-container">
+              <img src="./assets/bio5.png" class="d-block w-100" alt="Biocombustible 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Biocombustibles</h5>
+                <p>Los cultivos dan vida una vez mas</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider-img-container">
+              <img src="./assets/bo3.jpg" class="d-block w-100" alt="Biocombustible" 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Una alternativa viable</h5>
+                <p>A los combustibles fosiles</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider-img-container">
+              <img src="./assets/bo1.jpg" class="d-block w-100" alt="Biocombustible 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mejora la Calidad de Vida</h5>
+                <p>Reduciendo emisiones de CO2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ¿Qué es biocomb -->
+  <section id="que-es" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">¿Qué son los Biocombustibles?</h2>
+      <p class="text-center">Son carburantes ecológicos producidos a partir de biomasa vegetal o animal. Se caracterizan
+        por ser renovables y producir energía limpia. Se usan para reemplazar total o parcialmente a los combustibles
+        fósiles.</p>
+    </div>
+  </section>
+
+
+  <!-- Ventajas -->
+  <section id="ventajas" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Ventajas de los Biocombustibles</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Huella de carbono</h5>
+              <p class="card-text">Reducen la huella de carbono que generan los combustibles fósiles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Eficiencia</h5>
+              <p class="card-text">Consumen y contaminan menos por la eficiencia del proceso de producción</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Reciclaje</h5>
+              <p class="card-text">Procesan biomasa que puede provenir de desechos industriales y basura.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Galería -->
+  <section id="galeria" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería de Imágenes</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="./assets/bf1.jpg" class="img-fluid rounded" alt="biocomb 1">
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/bf2.jpg" class="img-fluid rounded" alt="biocomb 2">
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/bf3.jpg" class="img-fluid rounded" alt="biocomb 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <div class="row align-items-center">
+        <!-- Imagen a la izquierda -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="./assets/bio4.png" class="img-fluid rounded shadow" alt="Imagen de contacto">
+        </div>
+
+        <!-- Formulario -->
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" id="nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" id="correo" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Lorem Ipsum. Todos los derechos reservados.
+      <br>
+      [contenido tomado de
+      https://agrospray.com.ar/blog/biocombustibles/]
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
