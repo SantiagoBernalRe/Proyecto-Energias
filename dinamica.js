@@ -27,26 +27,31 @@ opcion.textContent(valorSeleccionado);
 const Ebase = document.getElementById(parseInt('acpm'));
 const TituloC = document.getElementById('tituloC');
 
+
 function TiempoEmisiones(){
   if(opciones == 'eolica'){
      TEbase=Ebase*15/60
      TEolica=Ebase
+
      EEbase=Ebase*800
-     EEolica=Ebase*5    
+     EEolica=Ebase*5
+     TituloC.textContent="Eolica"    
   }
   else if(opciones == 'solar'){
     TEbase=Ebase*15/60
     TSolar=Ebase
     EEbase=Ebase*800
     ESolar=Ebase*10
+    TituloC.textContent="Solar"
   }
   else if(opciones == 'biocombustible'){
     TEbase=Ebase*15/60
     TBiocombustible=Ebase*20/60
     EEbase=Ebase*800
     EBiocombustible=Ebase*70
+    TituloC.textContent="Biocombustible"
   }
   else{
-    aviso = print("debes seleccionar unda de las energias")
+    TituloC.textContent="Selecciona una elergia"
   }    
 }
