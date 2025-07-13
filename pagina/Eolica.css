@@ -1,5 +1,5 @@
 /* -----------------------------------
-   CONFIGURACIÓN GLOBAL
+  CONFIGURACIÓN GLOBAL
 ----------------------------------- */
 
 /* Habilita desplazamiento suave al hacer clic en enlaces internos */
@@ -17,7 +17,7 @@ section {
 
 
 /* -----------------------------------
-   ANIMACIÓN DE ENTRADA CON REBOTE
+  ANIMACIÓN DE ENTRADA CON REBOTE
 ----------------------------------- */
 
 .seccion-animada {
@@ -43,7 +43,7 @@ section {
 
 
 /* -----------------------------------
-   SLIDER DE IMÁGENES (CAROUSEL)
+SLIDER DE IMÁGENES (CAROUSEL)
 ----------------------------------- */
 
 #slider {
@@ -59,6 +59,7 @@ section {
 #carouselEolico img {
   object-fit: cover;
   height: 100%;
+
 }
 
 .slider-img-container {
@@ -80,7 +81,7 @@ section {
 
 
 /* -----------------------------------
-   TEXTO SOBRE LAS IMÁGENES DEL SLIDER
+  TEXTO SOBRE LAS IMÁGENES DEL SLIDER
 ----------------------------------- */
 
 .carousel-caption {
@@ -94,22 +95,33 @@ section {
 
 
 /* -----------------------------------
-   COLORES PERSONALIZADOS POR SECCIÓN
+  COLORES PERSONALIZADOS POR SECCIÓN
 ----------------------------------- */
+.bg-verde-custom{
+  background-color: #0a7e3f !important;
+}
 
 #que-es {
   background-color: #000205;
-  color: rgb(4, 4, 4);
+  color: rgb(3, 3, 3);
 }
 
 #ventajas {
-  background-color: #1c6ec0;
+  background-color:#0a7e3f;
   color: white;
 }
 
 #galeria {
   background-color: #dee2e6;
   color: black;
+  
+}
+
+.galeria-img {
+  width: 100%;
+  height: 250px;       /* altura fija */
+  object-fit: cover;   /* recorta la imagen para que llene el espacio */
+  border-radius: 12px; /* conserva el estilo redondeado */
 }
 
 #contacto {
@@ -140,7 +152,7 @@ section {
 
 
 /* -----------------------------------
-   RESPONSIVE: DISPOSITIVOS PEQUEÑOS
+RESPONSIVE: DISPOSITIVOS PEQUEÑOS
 ----------------------------------- */
 
 @media (max-width: 768px) {
