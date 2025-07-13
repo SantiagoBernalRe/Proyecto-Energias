@@ -10,7 +10,7 @@
 <body>
 
    <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Energía Eólica</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -18,8 +18,8 @@
       </button>
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="#index.html" class="nav-link">Inicio</a></li>
-          <li class="nav-item"><a href="#slider" class="nav-link">Galería</a></li>
+          <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
           <li class="nav-item"><a href="#que-es" class="nav-link">¿Qué es?</a></li>
           <li class="nav-item"><a href="#ventajas" class="nav-link">Ventajas</a></li>
           <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
@@ -65,16 +65,21 @@
     </div>
   </section>
 
-  <!-- ¿Qué es la energía eólica? -->
-  <section id="que-es" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4 text-center">¿Qué es la energía eólica?</h2>
-      <p class="text-center">Es una forma de energía renovable que utiliza la fuerza del viento para generar electricidad mediante aerogeneradores. Es limpia, inagotable y cada vez más usada en todo el mundo.</p>
-    </div>
-  </section>
+ <section id="que-es" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">¿Qué es la energía eólica?</h2>
+    <p>
+      Es una forma de energía renovable que utiliza la fuerza del viento para generar electricidad mediante aerogeneradores.
+      Es limpia, inagotable y cada vez más usada en todo el mundo.
+    </p>
+    <a href="https://www.britannica.com/science/wind-power" class="btn btn-outline-success mt-3" target="_blank" rel="noopener noreferrer">
+      Más información en Britannica
+    </a>
+  </div>
+</section>
 
   <!-- Ventajas -->
-  <section id="ventajas" class="py-5">
+  <section id="ventajas" class="py-5 bg-success">
     <div class="container">
       <h2 class="text-center mb-4">Ventajas de la energía eólica</h2>
       <div class="row text-center">
@@ -106,23 +111,63 @@
     </div>
   </section>
 
-  <!-- Galería -->
-  <section id="galeria" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Galería de Imágenes</h2>
-      <div class="row g-3">
-        <div class="col-md-4">
-          <img src="./assets/hermosa-vista-de-las-turbinas-eolicas-en-un-campo-cubierto-de-hierba-capturado-en-holanda.jpg" class="img-fluid rounded" alt="Eólica 1">
-        </div>
-        <div class="col-md-4">
-          <img src="./assets/hermosa-vista-de-las-turbinas-eolicas-en-un-campo-cubierto-de-hierba-capturado-en-holanda.jpg" class="img-fluid rounded" alt="Eólica 2">
-        </div>
-        <div class="col-md-4">
-          <img src="./assets/hermosa-vista-de-las-turbinas-eolicas-en-un-campo-cubierto-de-hierba-capturado-en-holanda.jpg" class="img-fluid rounded" alt="Eólica 3">
+<!-- Galería -->
+<section id="galeria" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Galería de Imágenes</h2>
+    <div class="row g-4 text-center">
+      
+      <!-- Imagen 1 - Offshore -->
+      <div class="col-md-4">
+        <div class="card border-0 h-100">
+          <img src="./assets/energia_eolica_marinaLATAM.jpg" class="galeria-img rounded" alt="Parque eólico marino">
+          <div class="card-body">
+            <p class="card-text">Parque eólico en el mar (offshore)</p>
+            <a href="https://www.nationalgrid.com/stories/energy-explained/what-offshore-wind-power" 
+               class="btn btn-outline-success btn-sm" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              Ver más
+            </a>
+          </div>
         </div>
       </div>
+
+      <!-- Imagen 2 - Onshore Iberdrola -->
+      <div class="col-md-4">
+        <div class="card border-0 h-100">
+          <img src="./assets/hermosa-vista-de-las-turbinas-eolicas-en-un-campo-cubierto-de-hierba-capturado-en-holanda.jpg" class="galeria-img rounded" alt="Parque eólico terrestre">
+          <div class="card-body">
+            <p class="card-text">Parque eólico en tierra (onshore)</p>
+            <a href="https://www.iberdrola.com/sustainability/how-onshore-wind-farms-work" 
+               class="btn btn-outline-success btn-sm" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              Ver más
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen 3 - Repsol -->
+      <div class="col-md-4">
+        <div class="card border-0 h-100">
+          <img src="./assets/turbinas-de-viento-en-las-tierras-de-labrantio-en-verano.jpg" class="galeria-img rounded" alt="Parque eólico en zona árida">
+          <div class="card-body">
+            <p class="card-text">Desarrollo eólico por Repsol</p>
+            <a href="https://www.repsol.com/en/energy-and-the-future/future-of-the-world/wind-farms/index.cshtml" 
+               class="btn btn-outline-success btn-sm" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              Ver más
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Contacto -->
 <section id="contacto" class="py-5">
@@ -149,7 +194,7 @@
             <label for="mensaje" class="form-label">Mensaje</label>
             <textarea id="mensaje" class="form-control" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-success">Enviar</button>
         </form>
       </div>
     </div>
@@ -159,7 +204,7 @@
 
 
   <!-- Footer -->
-  <footer class="bg-primary text-white text-center py-3">
+  <footer class="bg-success text-white text-center py-3">
     <p class="mb-0">&copy; 2025 Energía Eólica. Todos los derechos reservados.</p>
   </footer>
 
