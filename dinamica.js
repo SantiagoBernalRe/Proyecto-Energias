@@ -20,38 +20,67 @@ document.querySelectorAll('a.nav-link').forEach(link => {
     }
   });
 });
+
+
 const select = document.getElementById('opciones');
-const valorSeleccionado = select.value;
-const opcion = document.getElementById('seleccionaste');
-opcion.textContent(valorSeleccionado);
-const Ebase = document.getElementById(parseInt('acpm'));
 const TituloC = document.getElementById('tituloC');
+const opcion = document.getElementById('seleccionaste');
+const tiempoE = document.getElementById('cte');
+const tiempoB = document.getElementById('ctb')
+const entrada = document.getElementById('ACPM');
+const emisionesB = document.getElementById('ceb')
+const emisionesE =document.getElementById('cee')
 
+select.addEventListener('change', () => {
+  const valorSeleccionado = select.value;
+  TituloC.textContent = valorSeleccionado;
+  opcion.textContent = valorSeleccionado;
+});
 
-function TiempoEmisiones(){
-  if(opciones == 'eolica'){
-     TEbase=Ebase*15/60
-     TEolica=Ebase
-
-     EEbase=Ebase*800
-     EEolica=Ebase*5
-     TituloC.textContent="Eolica"    
-  }
-  else if(opciones == 'solar'){
-    TEbase=Ebase*15/60
-    TSolar=Ebase
-    EEbase=Ebase*800
-    ESolar=Ebase*10
-    TituloC.textContent="Solar"
-  }
-  else if(opciones == 'biocombustible'){
-    TEbase=Ebase*15/60
-    TBiocombustible=Ebase*20/60
-    EEbase=Ebase*800
-    EBiocombustible=Ebase*70
-    TituloC.textContent="Biocombustible"
-  }
-  else{
-    TituloC.textContent="Selecciona una elergia"
-  }    
+function calcular() {
+  TiempoEmisiones();
 }
+
+function TiempoEmisiones() {
+  const valorSeleccionado = select.value;
+  const Ebase = parseFloat(entrada.value);
+
+  if (isNaN(Ebase)) {
+    tiempoE.textContent = "Ingresa un número válido";
+    return;
+  }
+
+  let TEbase = Ebase * 15 / 60;
+
+  if (valorSeleccionado == 'eolica') {
+    let TEolica = Ebase;
+    tiempoB.textContent = TEbase;
+    tiempoE.textContent = TEolica;
+    let EEbase = Ebase * 800;
+    emisionesB.textContent = EEbase;
+    let EEolica = Ebase * 5;
+    emisionesE.textContent = EEolica;
+  }
+  else if (valorSeleccionado == 'solar') {
+    let TSolar = Ebase;
+    tiempoB.textContent = TEbase;
+    tiempoE.textContent = TSolar;
+    let EEbase = Ebase * 800;
+    emisionesB.textContent = EEbase;
+    let ESolar = Ebase * 10;
+    emisionesE.textContent = ESolar;
+  }
+  else if (valorSeleccionado == 'biocombustible') {
+    let TBiocombustible = Ebase * 20 / 60;
+    tiempoE.textContent = TBiocombustible;
+    let EEbase = Ebase * 800;
+    emisionesB.textContent = EEbase;
+    let EBiocombustible = Ebase * 70;
+    emisionesE.textContent = EBiocombustible;
+    tiempoB.textContent = TEbase;
+  }
+  else {
+    TituloC.textContent = "Selecciona una energía";
+  }
+}
+

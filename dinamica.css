@@ -17,29 +17,46 @@ section {
   margin-bottom: 30px; /* Reducido */
   transition: transform 0.6s ease;
 }
+#ACPM{
+  text-align: center;
+  width: 20%;
+  
+}
 .inicio {
   text-decoration: none; 
   color: rgb(254, 254, 254);           
 }
+
 .tabla.tabla {
   margin: 0 auto;
   border-collapse: collapse;
   background-color: white;
+  margin-bottom: 1%;
 }
-    
 
 
 .tabla th, .tabla td{
     border: 3px solid rgb(45, 57, 40);    
     align-items:center ;
-    width: 300px;
+    width: 500px;
     padding-top: 2%;
     padding-bottom: 2%;
-    text-align: center;
-    
+    text-align: center;   
 
 }
 
+button{
+  
+  background: #0a7e3f;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  width: 6%
+}
+
+.tabla.th{
+  font-size:larger
+}
 
 /* -----------------------------------
   ANIMACIÓN DE ENTRADA CON REBOTE
@@ -190,4 +207,5 @@ RESPONSIVE: DISPOSITIVOS PEQUEÑOS
     padding: 30px 15px;
     margin-bottom: 20px;
   }
+ 
 }

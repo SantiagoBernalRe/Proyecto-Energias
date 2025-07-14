@@ -38,28 +38,33 @@
             <option value="solar">Solar</option>
             <option value="biocombustible">Biocombustible</option>
         </select>
+        <br>
+        <br>
+        <input type="text" placeholder="Ingresa la cantidad consumida" id="ACPM"> kW
 </section>
-<h2 id="seleccionaste"></h2>
+
 <section >
     <table class="tabla">
         <tr>
-            <td></td><th> ACPM </th><th id="tituloC">Selecciona una energía</th>
+            <td></td><th> ACPM </th><th id="tituloC">SELECCIONA UNA ENERGÍA</th>
         </tr>
         <tr>
-            <th>cantidad utilizada</th>
+            <th>TIEMPO DE GENERACION(h)</th>
             <td>
-              <form action="">                
-                <input type="text" placeholder="cantidad consumida" id="ACPM"> kw 
+                             
+                 <h2 id="ctb">0</h2>
+                  
             </td>
-            <td><h2 id="ctb">a</h2>
+            <td><h2 id="cte">0</h2>
             </td>               
         </tr>
         <tr>
-            <th>Emisiones generadas</th>
-            <td><h2 id="ceb">a</h2></td>
-            <td><h2 id="cee">e</h2></td>
+            <th>EMISIONES GENERADAS(gCO2) </th>
+            <td><h2 id="ceb">0</h2></td>
+            <td><h2 id="cee">0</h2></td>
         </tr>
     </table>
+     <button onclick="calcular()">calcular</button> 
     </div>
 </section>
 
@@ -77,7 +82,7 @@
           <img src="img/BioAportes.jpg" class="img-fluid rounded" alt="Eólica 2">
         </div>
         <div class="col-md-4">
-          <img src="../Proyecto-Energias-main/Solar-System/assets/solar-five.jpg" class="img-fluid rounded" alt="Eólica 3">
+          <img src="./Solar-System/assets/solar-two.jpg" class="img-fluid rounded" alt="Eólica 3">
         </div>
       </div>
     </div>
