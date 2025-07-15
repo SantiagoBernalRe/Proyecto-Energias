@@ -29,13 +29,14 @@ body {
   color: white;
   text-align: center;
   box-sizing: border-box;
-  padding: 1%;
+  padding: 1.5%;
+
 }
 
 .encabezado h1 {
   font-size: 29px;
   color: #f1f1f1;
-  margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .subtitulo{
@@ -47,6 +48,7 @@ body {
   color: #ffffff;
   text-align: center;
   margin: 1%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* ===== CARRUSEL ===== */
