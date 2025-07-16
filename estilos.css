@@ -30,25 +30,34 @@ body {
   text-align: center;
   box-sizing: border-box;
   padding: 1.5%;
-
 }
 
 .encabezado h1 {
   font-size: 29px;
   color: #f1f1f1;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: titulo;
+  font-weight: 500;
 }
 
+@font-face {
+  font-family: titulo;
+  src: url(/fuentes/HeadlandOne-Regular.ttf);
+}
 .subtitulo{
   background-color: #096e37;
   width: 100%;
 }
 .subtitulo p {
-  font-size: 19px;
+  font-size: 22px;
   color: #ffffff;
   text-align: center;
   margin: 1%;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: subtitulo;
+}
+
+@font-face {
+  font-family: subtitulo;
+  src: url(/fuentes/static/WinkyRough-LightItalic.ttf);
 }
 
 /* ===== CARRUSEL ===== */

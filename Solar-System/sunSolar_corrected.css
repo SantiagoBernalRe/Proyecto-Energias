@@ -161,3 +161,27 @@ SLIDER DE IMÁGENES (CAROUSEL)
     margin-bottom: 20px;
   }
 }
+
+.navbar-brand{
+  font-family: titulo;
+  user-select: none;
+  padding: 1%;
+}
+
+.nav-item{
+  font-family: titulo;
+  font-size: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(/fuentes/HeadlandOne-Regular.ttf);
+}
+
+body {
+  background-image: url("/img/sede.png"); /* Replace with your image path */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Optional:  Scales the image to cover the entire element */
+}
