@@ -7,28 +7,28 @@ function calcular() {
     let ctb = 0, cte = 0, ceb = 0, cee = 0;
     let energiaLabel = '';
 
-    if (opcion === 'eolica') {
-        energiaLabel = 'Energía Eólica';
-        ctb = acpm * 0.1;  // Tiempo de generación para ACPM (horas por kW)
-        cte = acpm * 0.04; // Tiempo de generación para eólica
-        ceb = acpm * 680;  // Emisiones ACPM (gCO2 por kW)
-        cee = acpm * 15;   // Emisiones eólica
-    } else if (opcion === 'solar') {
-        energiaLabel = 'Energía Solar';
-        ctb = acpm * 0.1;
-        cte = acpm * 1;
-        ceb = acpm * 680;
-        cee = acpm * 35;
-    } else if (opcion === 'biocombustible') {
-        energiaLabel = 'Biocombustible';
-        ctb = acpm * 0.1;
-        cte = acpm * 0.07;
-        ceb = acpm * 680;
-        cee = acpm * 150;
-    } else {
-        alert('Por favor, selecciona una energía.');
-        return;
-    }
+   if (opcion === 'eolica') {
+    energiaLabel = 'Energía Eólica';
+    ctb = acpm * (15 / 60); // Tiempo de generación para ACPM (15 minutos = 0.25 horas)
+    cte = acpm * 1;         // Tiempo de generación para eólica (1 hora)
+    ceb = acpm * 680;       // Emisiones ACPM (gCO2 por kW)
+    cee = acpm * 15;        // Emisiones eólica
+} else if (opcion === 'solar') {
+    energiaLabel = 'Energía Solar';
+    ctb = acpm * (15 / 60);
+    cte = acpm * 1;         // Tiempo de generación para solar (1 hora)
+    ceb = acpm * 680;
+    cee = acpm * 35;
+} else if (opcion === 'biocombustible') {
+    energiaLabel = 'Biocombustible';
+    ctb = acpm * (15 / 60);
+    cte = acpm * (20 / 60); // Tiempo de generación para biocombustible (20 minutos = 0.333 horas)
+    ceb = acpm * 680;
+    cee = acpm * 150;
+} else {
+    alert('Por favor, selecciona una energía.');
+    return;
+}
 
     document.getElementById('tituloC').textContent = energiaLabel;
     document.getElementById('ctb').textContent = ctb.toFixed(2);
