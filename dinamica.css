@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #f8f9fa; /* Un gris claro, o pon el color que tú quieras */
+  background-color: #f8f9fa /* Un gris claro, o pon el color que tú quieras */
 }
 
 /* Aplica margen superior al hacer scroll para evitar que el navbar tape el contenido */
@@ -211,3 +211,27 @@ RESPONSIVE: DISPOSITIVOS PEQUEÑOS
 }
 
 
+.navbar-brand{
+  font-family: titulo;
+  user-select: none;
+  padding: 1%;
+  font-size: 130%;
+}
+
+.nav-item{
+  font-family: titulo;
+  font-size: 130%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(/fuentes/HeadlandOne-Regular.ttf);
+}
+
+body {
+  background-image: url("img/sede.png"); /* Replace with your image path */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Optional:  Scales the image to cover the entire element */
+}

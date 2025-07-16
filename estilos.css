@@ -43,6 +43,12 @@ body {
   font-family: titulo;
   src: url(/fuentes/HeadlandOne-Regular.ttf);
 }
+
+@font-face {
+  font-family: subtitulo;
+  src: url(/fuentes/static/WinkyRough-LightItalic.ttf);
+}
+
 .subtitulo{
   background-color: #096e37;
   width: 100%;
@@ -55,10 +61,6 @@ body {
   font-family: subtitulo;
 }
 
-@font-face {
-  font-family: subtitulo;
-  src: url(/fuentes/static/WinkyRough-LightItalic.ttf);
-}
 
 /* ===== CARRUSEL ===== */
 .carrusel {
