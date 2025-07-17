@@ -183,7 +183,7 @@ SLIDER DE IMÁGENES (CAROUSEL)
 }
 
 body {
-  background-image: url("./img/sede.png"); /* Replace with your image path */
+  background-image: url("../img/sede.png"); /* Replace with your image path */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: cover; /* Optional:  Scales the image to cover the entire element */
 }
