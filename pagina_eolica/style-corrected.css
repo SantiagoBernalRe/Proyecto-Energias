@@ -167,11 +167,12 @@ SLIDER DE IMÁGENES (CAROUSEL)
   font-family: titulo;
   user-select: none;
   padding: 1%;
+  font-size: 130%;
 }
 
 .nav-item{
   font-family: titulo;
-  font-size: 100%;
+  font-size: 130%;
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -182,7 +183,7 @@ SLIDER DE IMÁGENES (CAROUSEL)
 }
 
 body {
-  background-image: url("/img/sede.png"); /* Replace with your image path */
+  background-image: url("./img/sede.png"); /* Replace with your image path */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-size: cover; /* Optional:  Scales the image to cover the entire element */
 }
